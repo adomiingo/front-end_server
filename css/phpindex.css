@@ -1,0 +1,162 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== FONDO GENERAL ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eaf3ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+#principal {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 90, 180, 0.12);
+    transition: 0.3s ease;
+}
+
+/* ===== TÍTULO ===== */
+#principal h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0d3b8b;
+    font-weight: 600;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== LABELS ===== */
+label {
+    margin-bottom: 6px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+/* ===== INPUTS Y SELECT ===== */
+input,
+textarea,
+select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d0e2ff;
+    background-color: #f9fbff;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* FOCUS EFECTO */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2a6df4;
+    box-shadow: 0 0 0 3px rgba(42, 109, 244, 0.15);
+    background-color: #ffffff;
+}
+
+/* TEXTAREA AJUSTE */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* ===== BOTÓN ===== */
+button {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2a6df4, #1742a0);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(23, 66, 160, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ===== ALERTAS PHP ===== */
+.alert {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ejemplo éxito */
+.alert.success {
+    background-color: #e6f4ff;
+    color: #0d3b8b;
+    border: 1px solid #b6d4ff;
+}
+
+/* ejemplo error */
+.alert.error {
+    background-color: #ffecec;
+    color: #b00020;
+    border: 1px solid #ffb3b3;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    #principal {
+        padding: 25px;
+    }
+
+    #principal h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #principal {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 0.9rem;
+    }
+
+    label {
+        font-size: 0.85rem;
+    }
+}
