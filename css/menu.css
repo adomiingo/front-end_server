@@ -1,0 +1,93 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== FONDO GENERAL ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eaf3ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+#principal {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 90, 180, 0.12);
+    transition: 0.3s ease;
+}
+
+/* ===== TÍTULO ===== */
+#principal h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0d3b8b;
+    font-weight: 600;
+}
+
+/* ===== CONTENEDOR DEL MENÚ ===== */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaciado entre botones */
+}
+
+/* ===== BOTÓN (ANCHOR ADAPTADO) ===== */
+.btn-link {
+    display: block; /* Ocupa todo el ancho */
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado del link */
+    padding: 14px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2a6df4, #1742a0);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(23, 66, 160, 0.25);
+    color: white;
+}
+
+.btn-link:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #principal {
+        padding: 25px;
+    }
+    #principal h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    #principal {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .btn-link {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}

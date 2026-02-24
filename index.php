@@ -72,7 +72,7 @@ $aufgaben = $stmt_list->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMR Erinnerungen</title>
+    <title>Erinnerungen</title>
     <link rel="stylesheet" href="./css/phpindex.css">
     <style>
         /* Estilos rápidos para la tabla y filtros si no están en tu CSS */
